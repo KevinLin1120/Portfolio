@@ -15,8 +15,6 @@
 }
 .menu a{
     color: #fff;
-    
-    font-family: Khula;
     font-size: 1.2em;
     text-decoration: none;
     text-align: center;
@@ -26,13 +24,34 @@
 
     width: 70px;
     margin-bottom: 70px;
+    /* border-bottom: 4px solid transparent; */
+    position: relative;
+
+    transition: 0.3s;
+}
+/* .menu a:hover{
+    border-bottom: 4px solid white;
+} */
+.menu a::after{
+    content: "";
+    width: 80%;
+    left: 10%;
+    bottom: -20%;
+    border-bottom: 4px solid #fff;
+    
+    transform: translateX(-50%);
+    
+    opacity: 0;
+
+    position: absolute;
+    transition: 0.3s;
 }
 .menu a:hover{
-    /* animation-duration: 1s;
-    animation-name: menuAnim; */
     color: #F6AE2D;
-    border-bottom: 4px solid white;
-    margin-bottom: 67px;
+}
+.menu a:hover::after{
+    transform: translateX(0%);
+    opacity: 0.9;
 }
 @keyframes menuAnim{
     from{
