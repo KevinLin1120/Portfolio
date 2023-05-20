@@ -3,16 +3,57 @@
 .hidden{
     opacity: 0;
 }
+
+/* Side bar */
+.menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    top: 50px;
+    right: 30px;
+}
+.menu a{
+    color: #fff;
+    
+    font-family: Khula;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+
+
+    /* background-color: #F6AE2D; */
+
+    width: 70px;
+    margin-bottom: 70px;
+}
+.menu a:hover{
+    /* animation-duration: 1s;
+    animation-name: menuAnim; */
+    color: #F6AE2D;
+    border-bottom: 4px solid white;
+    margin-bottom: 67px;
+}
+@keyframes menuAnim{
+    from{
+        border-bottom: 0px;
+    }
+    to{
+        border-bottom: 2px solid white;
+    }
+}
+
+/* Console styles */
 .console-container{
     font-family: Khula;
     font-size: 4em;
     text-align: center;
 
     width: 600px;
-    height: 200px;
+    height: 300px;
     
 
-    display: block;
+    /* display: block; */
     /* position: relative;
     top: 0;
     left: 0;
