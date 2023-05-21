@@ -16,7 +16,7 @@
         <a href="">Web</a>
         <a href="">UI / UX</a>
         <a href="">Game</a>
-        <a href="">Other</a>
+        <a href="">Others</a>
     </div>
     <div class="Container">
         <section id="first">
@@ -28,14 +28,66 @@
         </section>
 
         <section id="second">
-            <div class="porfile">
+            <div class="profile">
                 <div class="content">
-                    <h2>Name : Kevin</h2>
-                </div>
-                <div class="skill">
+                    <div class="describe mb-4">
+                        <h2 id="name" style="color:rgb(231, 144, 115); width: 50%;">Kevin</h2>
+                        <p>YZU University Student</p>
+                        <p class="fst-italic">"Dreams to be a full-stack engineer."</p>
+                    </div>
+                    <div class="skill">
+                        <h4 style="color:lightblue" class="mb-2">Skills</h4>
+                        <!-- Btn group -->
+                        <div class="btn-group mb-5" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check collapse" data-bs-toggle="collapse" data-bs-target="#collapse1" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-outline-light" for="btnradio1">Front-end</label>
+                          
+                            <input type="radio" class="btn-check collapse" data-bs-toggle="collapse" data-bs-target="#collapse2" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-light" for="btnradio2">Back-end</label>
+                          
+                            <input type="radio" class="btn-check collapse" data-bs-toggle="collapse" data-bs-target="#collapse3" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn btn-outline-light" for="btnradio3">Design</label>
 
+                            <input type="radio" class="btn-check collapse" data-bs-toggle="collapse" data-bs-target="#collapse4" name="btnradio" id="btnradio4" autocomplete="off">
+                            <label class="btn btn-outline-light" for="btnradio4">Others</label>
+                        </div>
+                        <div id="collapseWrapper">
+                            <div class="collapse-horizontal collapse show" id="collapse1">
+                                <img src="./img/index/skills/html.png" alt="">
+                                <img src="./img/index/skills/css.svg.png" alt="">
+                                <img src="./img/index/skills/js.png" alt="">
+                            </div>
+                            <div class="collapse-horizontal collapse" id="collapse2">
+                                <img src="./img/index/skills/nodejs-1-logo.png" alt="">
+                                <img src="./img/index/skills/PHP-logo.svg.png" alt="">
+                                <img src="./img/index/skills/mongodb.svg" alt="">
+                                <img src="./img/index/skills/MySQL-Logo.png" alt="">
+                            </div>
+                            <div class="collapse-horizontal collapse" id="collapse3">
+                                <img src="./img/index/skills/figma.png" alt="">
+                                <img src="./img/index/skills/indesign.svg.png" alt="">
+                                <img src="./img/index/skills/ps.png" alt="">
+                                <img src="./img/index/skills/pr.png" alt="">
+                            </div>
+                            <div class="collapse-horizontal collapse" id="collapse4">
+                                <img src="./img/index/skills/unity.png" alt="">
+                                <img src="./img/index/skills/maya.png" alt="">
+                            </div>
+                        </div>
+                        <!-- Carousel -->
+                        <!-- <div class="wraper">
+                            <div class="carousel"></div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
+                        </div> -->
+
+                    </div>
                 </div>
-                <img src="" alt="" class="portrait">
+                <img src="./img/index/portrait.png" alt="" id="portrait">
             </div>
         </section>
 
