@@ -35,6 +35,8 @@ section{
 
     top: 30vh;
     right: 30px;
+
+    transition: all 0.3s;
 }
 .menu a{
     color: #fff;
@@ -68,6 +70,38 @@ section{
 .menu a:hover::after{
     transform: translateX(0%);
     opacity: 0.9;
+}
+/* When scroll to the selected works */
+/* Menu float to bottom. */
+.floatToBottom{
+    flex-direction: row;
+    
+    top: 75vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    justify-content: center;
+    
+    transition: all 0.3s;
+}
+.floatToBottom a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 4em;
+    border-radius: 500px;
+    background-color: #F6AE2D;
+
+    width: 10em;
+    height: 2em;
+    transition: all 0.3s;
+}
+.floatToBottom a:nth-child(1){
+    margin-left: 0em;
+}
+.floatToBottom a:hover{
+    color: #fff;
+    
 }
 
 /* Console styles */
@@ -216,5 +250,6 @@ section{
     filter: grayscale(10%);
     transition: filter 0.2s ease-in-out;
     /* transform: scale(1.3); */
-    /* scale: 120%; */
+    transition: scale 0.3s ease-in-out;
+    scale: 105%;
 }

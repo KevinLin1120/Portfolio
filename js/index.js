@@ -7,12 +7,16 @@ const observer = new IntersectionObserver((entries)=>{
             entry.target.classList.add('hidden-works-show');
             entry.target.classList.remove('hidden-works-hidden');
 
+            console.log(menu);
+            menu.classList.add("floatToBottom");
         }
         // hidden
         else if(entry.target.className.match("hidden-works")){
             entry.target.classList.add('hidden');
             entry.target.classList.add('hidden-works-hidden');
             entry.target.classList.remove('hidden-works-show');
+
+            menu.classList.remove("floatToBottom");
         }
     });
 });
@@ -46,7 +50,11 @@ for(let i = 0; i < collapseBtns.length; i++){
 // const observer = new IntersectionObserver((entries)=>{
 //     entries.forEach
 // })
+
+// Selected works 
 const hiddenWorks = document.querySelectorAll('.hidden-works');
 hiddenWorks.forEach(element => {
     observer.observe(element);
 });
+
+let menu = document.querySelector('.menu');
