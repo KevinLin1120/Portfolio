@@ -1,75 +1,7 @@
-/* Terminal Styles */
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
-/* Basic setup */
-.hidden{
-    opacity: 0;
-}
-body{
-    width: 100vw;
-    height: 100vh;
-    background-color: #191919;
-}
-.Container{
-    width: 100%;
-    height: 100%;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-}
-section{
-    width: 100vw;
-    height: 100vh;
-
-    scroll-snap-align: start;
-}
-
 #first{
     display: flex;
-    align-items: center;
-}
-
-/* Menu bar */
-.menu{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-
-    top: 30vh;
-    right: 30px;
-
-    transition: all 0.3s;
-}
-.menu a{
-    color: #fff;
-    font-size: 1.2em;
-    text-decoration: none;
-    text-align: center;
-
-    width: 70px;
-    margin-bottom: 70px;
     position: relative;
-
-    transition: 0.3s;
-}
-.menu a::after{
-    content: "";
-    width: 80%;
-    left: 10%;
-    bottom: -20%;
-    border-bottom: 4px solid #fff;
-    
-    transform: translateX(-50%);
-    
-    opacity: 0;
-
-    position: absolute;
-    transition: 0.3s;
-}
-.menu a:hover{
-    color: #F6AE2D;
-}
-.menu a:hover::after{
-    transform: translateX(0%);
-    opacity: 0.9;
+    align-items: center;
 }
 /* When scroll to the selected works */
 /* Menu float to bottom. */

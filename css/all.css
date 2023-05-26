@@ -1,11 +1,36 @@
+/* Terminal Styles */
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+/* Basic setup */
 *{
     color: #fff;
     font-family: Khula;
+    scroll-behavior: smooth;
 }
-.container{
-    margin: 0;
-    padding: 0;
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191919;
 }
+.Container{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+
+    scroll-snap-align: start;
+}
+
+.hidden{
+    opacity: 0;
+}
+
 @media (prefers-reduced-motion) {
     .hidden{
         transition: none;

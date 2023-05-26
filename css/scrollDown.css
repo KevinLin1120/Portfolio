@@ -1,0 +1,38 @@
+.scroll-box{
+    left: 50vw;
+    top: 85vh;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.scroll-box span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+
+    margin: -10px;
+    animation: scroll-down-anim 2s infinite;
+}
+
+.scroll-box span:nth-child(2){
+    animation-delay: -0.1s;
+}
+.scroll-box span:nth-child(3){
+    animation-delay: -0.2s;
+}
+
+@keyframes scroll-down-anim {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-15px, -15px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(15px, 15px);
+    }
+}

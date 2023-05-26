@@ -1,0 +1,45 @@
+/* Menu bar */
+.menu{
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    top: 30vh;
+    right: 30px;
+
+    transition: all 0.3s;
+}
+.menu a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+
+    width: 70px;
+    margin-bottom: 70px;
+    position: relative;
+
+    transition: 0.3s;
+}
+.menu a::after{
+    content: "";
+    width: 80%;
+    left: 10%;
+    bottom: -20%;
+    border-bottom: 4px solid #fff;
+    
+    transform: translateX(-50%);
+    
+    opacity: 0;
+
+    position: absolute;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color: #F6AE2D;
+}
+.menu a:hover::after{
+    transform: translateX(0%);
+    opacity: 0.9;
+}
