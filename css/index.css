@@ -65,26 +65,15 @@
 }
 
 /* Profile */
-#second{
-    justify-content: center;
-    display: flex;
-}
-
 .profile{
     display: flex;
     margin-top: 20vh;
 }
 
 #portrait{
-    width: 280px;
-    height: 280px;
     object-position: 16px 30px;
     object-fit: cover;
-
     background-color: #F38C8E;
-    border-radius: 50%;
-
-    margin-left: 400px;
 }
 
 /* Skills */
