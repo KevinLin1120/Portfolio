@@ -27,9 +27,8 @@ for (let i = 0; i < collapseBtns.length; i++) {
 const swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 3,
-    spaceBetween: 10,
-    centeredSlides: true, // Ensures the central slide is always centered
-    effect: 'coverflow',
+    spaceBetween: -100,
+    centeredSlides: true, // Ensures the central slide is always centered,
     coverflowEffect: {
         rotate: 0, // No rotation for the slides
         stretch: 0, // No stretching of the slides
@@ -41,12 +40,10 @@ const swiper = new Swiper('.swiper', {
         delay: 3000,
     },
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
