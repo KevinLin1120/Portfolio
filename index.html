@@ -24,13 +24,61 @@
   </head>
   <body>
     <div class="Container">
-      <div class="menu">
-        <a href="./html/web.html">Web</a>
-        <a href="./html/ui_ux.html">UI / UX</a>
-        <a href="./html/game.html">Game</a>
-        <a href="./html/other.html">Others</a>
-      </div>
       <section id="first">
+        <nav class="navbar navbar-expand-lg position-absolute top-0 w-100 bg-transparent p-3" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="./icon.png" style="width: 48px; filter: invert()"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item me-lg-5">
+                  <a
+                    class="nav-link active text-end text-lg-start"
+                    aria-current="page"
+                    href="./html/web.html"
+                    >Web</a
+                  >
+                </li>
+                <li class="nav-item me-lg-5">
+                  <a
+                    class="nav-link active text-end text-lg-start"
+                    aria-current="page"
+                    href="./html/ui_ux.html"
+                    >UI / UX</a
+                  >
+                </li>
+                <li class="nav-item me-lg-5">
+                  <a
+                    class="nav-link active text-end text-lg-start"
+                    aria-current="page"
+                    href="./html/game.html"
+                    >Game</a
+                  >
+                </li>
+                <li class="nav-item me-lg-5">
+                  <a
+                    class="nav-link active text-end text-lg-start"
+                    aria-current="page"
+                    href="./html/other.html"
+                    >Others</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         <!-- Console title -->
         <div class="console-container">
           <span id="text"></span>
@@ -174,15 +222,9 @@
       </section>
 
       <section id="third" class="container pt-5" style="position: relative">
-        <div
-          class="row mx-auto w-100"
-          style="
-            position: absolute;
-            top: 15%;
-          "
-        >
+        <div class="row mx-auto w-100" style="position: absolute; top: 15%">
           <div class="col">
-            <h2 style="color: plum;" id="works" class="text-center">
+            <h2 style="color: plum" id="works" class="text-center">
               Selected Works
             </h2>
           </div>
@@ -195,34 +237,23 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                   <a href="./html/web.html#second" class="hidden-works">
-                    <img
-                      src="./img/index/pomoclock/pomofocus.png"
-                  />
-                </a>
+                    <img src="./img/index/pomoclock/pomofocus.png" />
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="./html/web.html#fourth" class="hidden-works"
-                    >
-                    <img
-                      src="./img/index/justplay/justplay.png"
-                  />
-                </a>
+                  <a href="./html/web.html#fourth" class="hidden-works">
+                    <img src="./img/index/justplay/justplay.png" />
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="./html/ui_ux.html#third" class="hidden-works"
-                    >
-                    <img
-                      src="./img/index/library/library-landscape.png"
-                  />
-                </a>
+                  <a href="./html/ui_ux.html#third" class="hidden-works">
+                    <img src="./img/index/library/library-landscape.png" />
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="./html/game.html#second" class="hidden-works"
-                    >
-                    <img
-                      src="./img/index/Melting Ice/mockup.png"
-                  />
-                </a>
+                  <a href="./html/game.html#second" class="hidden-works">
+                    <img src="./img/index/Melting Ice/mockup.png" />
+                  </a>
                 </div>
               </div>
               <div class="swiper-pagination"></div>

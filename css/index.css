@@ -43,10 +43,10 @@
 /* Console styles */
 .console-container {
     font-family: Khula;
-    font-size: 4em;
+    font-size: 3.5em;
     text-align: center;
 
-    width: 600px;
+    width: 90%;
     margin: auto;
 
     color: white;

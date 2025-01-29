@@ -14,7 +14,7 @@ body{
     background-color: #191919;
 }
 .Container::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 .Container{
     width: 100%;
